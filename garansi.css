@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header li, footer li {
+    list-style: none;
+}
+ul {
+    padding: 0px;
+}
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/*HEADER*/
+header {
+    background-color: white;
+    width: 100%;
+    position :fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 1px 4px rgb(83, 83, 83);
+}
+.header-top {
+    text-align: center;
+}
+.logo-header {
+    width: 90px;
+}
+.header-bottom ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+.header-bottom li {
+    text-align: center;
+    font-weight: bold;
+}
+.header-bottom a {
+    display: block;
+    color: black;
+    padding: 10px 25px;
+}
+.header-bottom a:hover {
+    background-color: turquoise;
+    color: white;
+    transition: 0.5s;
+}
+.active a{
+    background-color: turquoise;
+    color: white;
+}
+/*AKHIR HEADER*/
+
+/*CONTENT UTAMA*/
+.content-wrapper {
+    background-color: whitesmoke;
+    padding: 170px 0 50px 0;
+    text-align: center;
+}
+.content-wrapper h2, p {
+    margin: 0px;
+}
+.content {
+    background-color: white;
+    margin-top: 40px;
+    width: 70%;
+    padding: 0px 10px 10px 10px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 1px rgb(65, 65, 65);
+}
+.content p {
+    line-height: 25px;
+    margin-top: 8px;
+    text-align: justify;
+}
+.content li {
+    line-height: 25px;
+}
+ol {
+    padding-left: 25px;
+}
+
+/*AKHIR CONTENT UTAMA*/
+
+/*FOOTER*/
+footer {
+    background-color: white;
+    height: 250px;
+    position: relative;
+    padding: 25px 25px 0 25px;
+}
+.cr {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+}
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+}
+.information-footer {
+    width: 20%;
+}
+.information-footer p {
+    font-weight: bold;
+}
+.information-footer li {
+    line-height: 30px;
+    color: rgb(65, 65, 65);
+}
+.logo-footer {
+    width: 90px;
+}
+.logo-footer .logo {
+    width: 100%;
+    height: auto;
+}
+.medsos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.medsos img {
+    width: 25px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.shopi {
+    display: block;
+    margin-left: 15px;
+}
+.fa-instagram {
+    font-size: 22px;
+    margin-left: 5px;
+}
+.wa {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    overflow: visible;
+    z-index: 2;
+}
+
+.drop-left {
+    margin-right: 2px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    padding: 3px 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+.logo-wa img {
+    width: 55px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+}
+.logo-wa img:hover{
+    opacity: 1;
+}
+.wa:hover .drop-left{
+    display: block;
+}
