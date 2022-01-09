@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b188edadce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>Odni Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html"><img class="logo-header" src="logo.png"></a>
+            </div>
+            <div class="header-bottom">
+                <ul>
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li><a href="products.html">PRODUCTS</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--SLIDESHOW-->
+    <div class="slideshow-wrapper" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="satu.png" />
+            </div>
+
+            <div class="mySlides">
+                <img src="dua.png" />
+            </div>
+
+            <div class="mySlides">
+                <img src="tiga.png" />
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <!--AKHIR SLIDESHOW-->
+    <!--WHATSAPP-->
+    <div class="wa">
+        <p class="drop-left">WhatsApp</p>
+        <a href="https://wa.me/message/BMFFS2UAZZZAG1" target="_blank" class="logo-wa"><img
+                src="https://seeklogo.com/images/W/whatsapp-icon-logo-8CA4FB831E-seeklogo.com.png"></a>
+    </div>
+    <!--AKHIR WHATSAPP-->
+    <footer>
+        <div class="container">
+            <div class="flex-footer">
+                <div class="logo-footer">
+                    <img class="logo" src="logo.png">
+                    <div class="medsos">
+                        <a href="https://www.instagram.com/odnistore/" target="_blank" class="fab fa-instagram"></a>
+                        <a class="shopi" href="https://shp.ee/k6ntr5g" target="_blank"><img src="shopee.png"></a>
+                    </div>
+                </div>
+                <div class="information-footer">
+                    <p>Information</p>
+                    <ul>
+                        <li><a href="garansi.html">Garansi Produk</a></li>
+                        <li><a href="pengiriman.html">Pengiriman</a></li>
+                    </ul>
+                </div>
+            </div>
+                <p class="cr">
+                <i class="far fa-copyright"></i> 2022 Abimanyu.
+            </p>
+        </div>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script>
+        let slideIndex = 1;
+
+        const plusSlides = (n) => {
+            slideIndex += n;
+            showSlides(slideIndex);
+        }
+
+        const showSlides = (n) => {
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        showSlides(slideIndex);      
+    </script>
+    <!--AKHIR JAVASCRIPT-->
+</body>
+
+</html>
