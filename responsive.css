@@ -1,0 +1,95 @@
+@media screen and (max-width:1000px) {
+    .container-slide {
+        width: 34%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .product {
+        width: 30%;
+    }
+    .btn-wrapper {
+        width: 70%;
+    }
+    .content-wrapper .logo {
+        width: 14%;
+    }
+    .content {
+        width: 80%;
+    }
+    .container-slide {
+        width: 40%;
+    }
+}
+@media screen and (max-width:775px) {
+    .container-desc {
+        width: 45%;
+    }
+    .container-slide {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .products {
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .flex-footer {
+        flex-wrap: wrap;
+    }
+    .information-footer {
+        width: 35%;
+    }
+    .cr {
+        bottom: 5px;
+    }
+    .logo-footer {
+        width: 80px;
+    }
+    .btn-wrapper {
+        width: 80%;
+    }
+    .content-wrapper .logo {
+        width: 16%;
+    }
+    .content {
+        width: 100%;
+    }
+    .flex-content {
+        flex-wrap: wrap;
+    }
+    .container-desc {
+        width: 70%;
+        margin-top: 30px;
+    }
+    .container-slide {
+        width: 75%;
+    }
+    .prev, .next {
+        top: 50%;
+    }
+}
+@media screen and (max-width:410px) {
+    .information-footer p,li {
+        font-size: 14px;
+    }
+    .information-footer {
+        width: 40%;
+    }
+    .logo-footer {
+        width: 70px;
+    }
+    .product {
+        width: 70%;
+    }
+    .btn-wrapper {
+        width: 100%;
+    }
+    .content-wrapper .logo {
+        width: 19%;
+    }
+}
